@@ -1,0 +1,222 @@
+/*------------------------------------------- GENERAL----------------------------------*/
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 100%; }
+
+/*-------------------------------------------ENCABEZADO-------------------------------*/
+.encabezado {
+  display: flex;
+  justify-content: space-between; }
+  .encabezado__item {
+    list-style-type: none;
+    margin: 0.5rem 3rem 0 0; }
+  .encabezado__icono {
+    margin: 1rem; }
+  .encabezado__link {
+    text-decoration: none;
+    color: #5a80d1; }
+
+/*-------------------------------------------- HEADER ---------------------------------*/
+header {
+  font-family: 'Chakra Petch', sans-serif;
+  background-color: black; }
+
+nav ul li i {
+  padding: 1rem; }
+
+/*---------------------------------------------FOOTER-----------------------------------------*/
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #313131; }
+  .footer__lista {
+    display: flex;
+    padding: 1rem;
+    list-style: none;
+    font-weight: bold;
+    font-size: 1rem; }
+  .footer__link {
+    text-decoration: none;
+    margin: 1rem; }
+  .footer__icono {
+    color: #52748b; }
+
+/*-------------------------------LOGO SERVICEJAF------------------------------------*/
+.estiloLogo {
+  color: #aed5fa !important;
+  font-size: 1.3rem;
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-bottom: groove 1rem #52748b;
+  border-right: groove 1rem #878c8f; }
+  .estiloLogo span {
+    color: #5a80d1; }
+
+/*-------------------------------LOGO WHATSAPP------------------------------------*/
+.logoWs {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 5; }
+  .logoWs img {
+    width: 60px;
+    height: 60px; }
+
+/*---------------------------------HOME-----------------------------------------*/
+.grillaFotos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center; }
+  .grillaFotos img {
+    border-radius: 8rem;
+    border-bottom: groove 0.8rem #722e2e;
+    width: 100px;
+    height: 100px;
+    margin-top: 2rem; }
+
+.tituloPrincipal .estiloPrincipal, .tituloPrincipal h2, .tituloPrincipal h3 {
+  font-size: 2rem;
+  font-weight: bold; }
+
+.tituloPrincipal h2 {
+  margin-top: 3rem;
+  color: whitesmoke;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.tituloPrincipal h3 {
+  margin-top: 1rem;
+  color: #722e2e;
+  font-family: 'Chakra Petch', sans-serif; }
+
+.imagenPrincipal {
+  border-radius: 1rem;
+  margin: 2rem;
+  width: 80%; }
+
+.botonPresupuesto {
+  margin: 3rem; }
+
+/*---------------------------------SERVICIOS-----------------------------------------*/
+.servicios {
+  display: flex;
+  justify-content: center;
+  margin: 2rem; }
+  .servicios i {
+    margin-right: 1rem; }
+
+.fotosCards {
+  width: auto;
+  height: 15rem; }
+
+/*-------------------------------ZONAS DE COBERTURA------------------------------------*/
+iframe {
+  width: 380px;
+  height: 220px;
+  border-radius: 12px; }
+
+.cobertura {
+  color: #52748b; }
+
+h2 {
+  margin: 2rem; }
+
+/*------------------------------------CONTACTO---------------------------------------*/
+.contacto {
+  display: block; }
+
+.formContacto {
+  background-color: #878c8f;
+  border-radius: 1rem;
+  flex-basis: 40%;
+  padding: 1rem;
+  margin: 1rem; }
+  .formContacto ul li {
+    list-style-type: none;
+    margin: 1rem; }
+  .formContacto ul li a {
+    color: #144883;
+    text-decoration: none;
+    font-weight: bold; }
+  .formContacto ul li i {
+    margin-right: 0.5rem; }
+
+.mapaContacto {
+  width: 300px;
+  height: 200px; }
+
+/*-------------------------------NOSOTROS------------------------------------*/
+.nosotros {
+  color: #b6cce0;
+  margin: 1rem; }
+
+#ntros {
+  color: #fdeeee;
+  border: groove 0.8rem #1b5286;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 1rem; }
+
+/*---------------------------------MEDIA QUERIES------------------------------------*/
+@media only screen and (min-width: 600px) {
+  .encabezado {
+    justify-content: center; }
+  .footer__lista {
+    font-size: 1.5rem; }
+  .logoWs img {
+    width: 80px;
+    height: 80px; }
+  iframe {
+    width: 600px;
+    height: 250px;
+    margin: 2rem; }
+  .imagenPrincipal {
+    width: auto; }
+  .contacto {
+    display: flex;
+    justify-content: space-evenly; } }
+
+@media only screen and (min-width: 992px) {
+  .encabezado {
+    justify-content: flex-end; }
+  .estiloLogo {
+    font-size: 1.8rem;
+    padding: 1rem;
+    margin-bottom: 1rem; }
+  .footer__icono:hover {
+    transform: scale(2, 2); }
+  .logoWs img {
+    width: 100px;
+    height: 100px; }
+  .logoWs:hover {
+    transform: scale(1.3, 1.3); }
+  .grillaFotos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto; }
+    .grillaFotos img {
+      width: 120px;
+      height: 120px; }
+  iframe {
+    width: 750px;
+    height: 350px;
+    margin: 2rem; }
+  h2, h3 {
+    font-size: 1.5rem; }
+  nav ul li a:hover {
+    background-color: black;
+    border-radius: 10px;
+    color: #aed5fa !important;
+    padding: 0.5rem;
+    font-weight: bold; }
+  .escalaLogos:hover {
+    transform: scale(1.5, 1.5);
+    transition: 1s; } }
