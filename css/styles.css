@@ -10,12 +10,14 @@ body {
   font-size: 100%; }
 
 /*-------------------------------------------ENCABEZADO-------------------------------*/
+.textoEncabezado {
+  visibility: hidden; }
+
 .encabezado {
   display: flex;
-  justify-content: space-between; }
+  justify-content: center; }
   .encabezado__item {
-    list-style-type: none;
-    margin: 0.5rem 3rem 0 0; }
+    list-style-type: none; }
   .encabezado__icono {
     margin: 1rem; }
   .encabezado__link {
@@ -40,7 +42,7 @@ nav ul li i {
     padding: 1rem;
     list-style: none;
     font-weight: bold;
-    font-size: 1rem; }
+    font-size: 1.5rem; }
   .footer__link {
     text-decoration: none;
     margin: 1rem; }
@@ -167,8 +169,12 @@ h2 {
 
 /*---------------------------------MEDIA QUERIES------------------------------------*/
 @media only screen and (min-width: 600px) {
+  .textoEncabezado {
+    visibility: visible; }
   .encabezado {
     justify-content: center; }
+    .encabezado__item {
+      margin: 0.5rem 3rem 0 0; }
   .footer__lista {
     font-size: 1.5rem; }
   .logoWs img {

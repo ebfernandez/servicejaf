@@ -18,17 +18,17 @@ body{
 
 
 /*-------------------------------------------ENCABEZADO-------------------------------*/
-
+.textoEncabezado
+{
+    visibility: hidden;
+}
 .encabezado{    
     display: flex;      
-    justify-content:space-between; 
-    font-size: 0.7rem;
+    justify-content: center;    
            
    
     &__item{
-        list-style-type: none;
-        margin: 0.5rem 3rem 0 0;       
-        
+        list-style-type: none;        
     }
     
     &__icono{
@@ -67,7 +67,7 @@ nav ul li i{
         padding: 1rem;  
         list-style: none;   
         font-weight: bold;   
-        font-size: 2rem; 
+        font-size: 1.5rem; 
     }
 
     &__link{
@@ -278,12 +278,23 @@ h2{
 
 @media only screen and (min-width:600px){
 
-    .encabezado{          
-        justify-content: center;              
+    .textoEncabezado
+    {
+    visibility: visible;
     }
 
+    .encabezado{          
+        justify-content: center;      
+        
+    &__item{        
+        margin: 0.5rem 3rem 0 0;            
+        }
+
+    }
+
+
     .footer__lista{    
-        font-size: 2.5rem;    
+        font-size: 1.5rem;    
     }
 
     .logoWs img{
