@@ -9,17 +9,30 @@ body {
   text-align: center;
   font-size: 100%; }
 
-/*-------------------------------------------ENCABEZADO-------------------------------*/
-.textoEncabezado {
-  visibility: hidden; }
+.secciones {
+  margin: 2rem; }
+  .secciones__titulos, .nosotros__titulos {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.2rem;
+    background: #52748b;
+    border-radius: 0.5rem;
+    color: #f0e6e6;
+    letter-spacing: 0.05rem;
+    font-weight: 400;
+    margin: 0 0 1rem;
+    text-align: center;
+    padding: 0.7rem; }
 
+/*-------------------------------------------ENCABEZADO-------------------------------*/
 .encabezado {
   display: flex;
-  justify-content: center; }
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin-right: 1rem; }
   .encabezado__item {
     list-style-type: none; }
   .encabezado__icono {
-    margin: 1rem; }
+    margin: 0.4rem; }
   .encabezado__link {
     text-decoration: none;
     color: #5a80d1; }
@@ -36,7 +49,7 @@ nav ul li i {
 .footer {
   display: flex;
   justify-content: center;
-  background-color: #313131; }
+  background-color: #262929; }
   .footer__lista {
     display: flex;
     padding: 1rem;
@@ -48,6 +61,8 @@ nav ul li i {
     margin: 1rem; }
   .footer__icono {
     color: #52748b; }
+  .footer__parrafo {
+    color: #5e5d5d; }
 
 /*-------------------------------LOGO SERVICEJAF------------------------------------*/
 .estiloLogo {
@@ -125,12 +140,6 @@ iframe {
   height: 220px;
   border-radius: 12px; }
 
-.cobertura {
-  color: #52748b; }
-
-h2 {
-  margin: 2rem; }
-
 /*------------------------------------CONTACTO---------------------------------------*/
 .contacto {
   display: block; }
@@ -145,36 +154,49 @@ h2 {
     list-style-type: none;
     margin: 1rem; }
   .formContacto ul li a {
-    color: #144883;
     text-decoration: none;
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: 'Chakra Petch', sans-serif;
+    border-radius: 0.5rem;
+    color: #f0e6e6;
+    letter-spacing: 0.05rem;
+    padding: 0.7rem; }
   .formContacto ul li i {
-    margin-right: 0.5rem; }
+    margin-right: 0.5rem;
+    color: #105481; }
 
 .mapaContacto {
   width: 300px;
   height: 200px; }
 
 /*-------------------------------NOSOTROS------------------------------------*/
-.nosotros {
-  color: #b6cce0;
-  margin: 1rem; }
+.grillaNosotros {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 2fr); }
 
-#ntros {
-  color: #fdeeee;
-  border: groove 0.8rem #1b5286;
-  padding: 2rem;
+.nosotros {
   margin: 2rem;
-  border-radius: 1rem; }
+  text-align: left; }
+  .nosotros__parrafos {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5em;
+    padding: 0;
+    margin: 0 0 1.5rem; }
+
+.imagenNosotros {
+  margin: 0 0 0 0; }
 
 /*---------------------------------MEDIA QUERIES------------------------------------*/
 @media only screen and (min-width: 600px) {
-  .textoEncabezado {
-    visibility: visible; }
   .encabezado {
     justify-content: center; }
     .encabezado__item {
-      margin: 0.5rem 3rem 0 0; }
+      padding-right: 1rem;
+      padding-top: 0.4rem; }
   .footer__lista {
     font-size: 1.5rem; }
   .logoWs img {
@@ -188,11 +210,16 @@ h2 {
     width: auto; }
   .contacto {
     display: flex;
-    justify-content: space-evenly; } }
+    justify-content: space-evenly; }
+  .imagenNosotros {
+    margin: 0 0 3rem 0; } }
 
 @media only screen and (min-width: 992px) {
   .encabezado {
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    font-size: 1rem; }
+    .encabezado__item {
+      margin-right: 2rem; }
   .estiloLogo {
     font-size: 1.8rem;
     padding: 1rem;
@@ -225,4 +252,9 @@ h2 {
     font-weight: bold; }
   .escalaLogos:hover {
     transform: scale(1.5, 1.5);
-    transition: 1s; } }
+    transition: 1s; }
+  .grillaNosotros {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto; }
+  .nosotros__titulos {
+    display: inline-block; } }
